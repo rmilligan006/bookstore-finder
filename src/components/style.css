@@ -186,7 +186,7 @@ html {
 .overlay-inner .description{
     margin-top: 2rem;
     text-align: justify;
-    font-size: 13px;
+    font-size: 10px;
 }
 button{
     cursor: pointer;

@@ -31,7 +31,7 @@ const Modal = ({ show, item, onClose }) => {
               </a>
             </div>
           </div>
-          <h4 className="description">{item.volumeInfo.description}</h4>
+          <p className="description">{item.volumeInfo.description}</p>
         </div>
       </div>
     </>

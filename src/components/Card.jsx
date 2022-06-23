@@ -11,7 +11,7 @@ const Card = ({ book }) => {
           item.volumeInfo.imageLinks &&
           item.volumeInfo.imageLinks.smallThumbnail;
         let amount = item.saleInfo.listPrice && item.saleInfo.listPrice.amount;
-        if (thumbnail != undefined && amount != undefined)
+        if (thumbnail !== undefined && amount !== undefined)
           return (
             <>
               <div
