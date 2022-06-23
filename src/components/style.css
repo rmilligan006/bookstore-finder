@@ -132,28 +132,34 @@ html {
     top: 0;
     bottom: 0;
     right: 0;
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .overlay-inner{
     background: white;
-    width: 700px;
-    height: 550px;
+    width: 500px;
+    height:550px;
     padding: 1.5rem;
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
     font-size: 1.3rem;
+    overflow-y: scroll;
 }
+
+.overlay-inner::-webkit-scrollbar{
+    display: none;
+}
+
 .overlay-inner .close{
     position: absolute;
     top:1rem;
     right: 1rem;
     outline: none;
     border: none;
-    font-size: 17px;
+    font-size: 12px;
     background-color: transparent;
 }
 .overlay-inner .inner-box{
@@ -163,7 +169,7 @@ html {
 }
 .overlay-inner .inner-box img{
     margin-right: 20px;
-    width: 150px;
+    width: 100px;
     height: 200px;
 }
 .overlay-inner .inner-box h3{
@@ -186,7 +192,8 @@ html {
 .overlay-inner .description{
     margin-top: 2rem;
     text-align: justify;
-    font-size: 10px;
+    font-size: 16px;
+    scroll-behavior: inherit;
 }
 button{
     cursor: pointer;
