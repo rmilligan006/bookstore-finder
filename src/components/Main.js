@@ -12,9 +12,9 @@ const Main = () => {
     if (evt.key === "Enter") {
       axios
         .get(
-          `https://www.googleapis.com/books/v1/volumes?q=" +
+          "https://www.googleapis.com/books/v1/volumes?q=" +
             search +
-            "&key=${process.env.REACT_APP_API_KEY}&maxResults=40`
+            "&key=AIzaSyDzByOlEdlXCP5DhkofJRPi9wil9u0N1mU&maxResults=40"
         )
         .then((res) => setData(res.data.items))
         .catch((err) => console.log(err));
